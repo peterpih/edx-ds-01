@@ -13,7 +13,7 @@ library(dplyr)</b>
 murders <- mutate(murders, rate = total / population *100000)
 </pre>
 
-- Filter Columns
+- Filter Rows
 
 <pre>
 <b>filter</b> - filter(<em>data frame</em>, <em>condition</em>)
