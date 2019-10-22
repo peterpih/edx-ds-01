@@ -1,3 +1,10 @@
+Using the dyplr package  
+
+<pre>
+<b>install.packages("dyplr")
+library(dplyr)</b>
+</pre>
+
 - Change/Add Columns  
 
 <pre>
@@ -25,8 +32,6 @@ new_table <- select(murders, state, region, rate)
 - Pipe (connect statements)
 
 <pre>
-install.packages("dyplr")
-library(dplyr)
 <em>statement</em> <b>%>%</b> </em>statement</em>
 
 murders %>% select(state, region, rate) %>% filter(rate <= 0.71)
