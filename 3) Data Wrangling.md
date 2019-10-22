@@ -1,4 +1,4 @@
-- Change a Column  
+- Change/Add Columns  
 
 <pre>
 <b>mutate</b> - mutate(<em>data frame</em>, <em>column</em> = <em>formula/value</em>)
