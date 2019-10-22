@@ -36,3 +36,20 @@ new_table <- select(murders, state, region, rate)
 
 murders %>% select(state, region, rate) %>% filter(rate <= 0.71)
 </pre>
+
+- nrow (number of rows)
+
+<pre>
+<b>nrow</b>(<em>data frame</em>)
+
+nrow(murders)
+</pre>
+
+- In
+
+<pre>
+<em>column</em> <b>%in%</b> c(<em>list</em>)
+
+filter(murders, state %in% c("New York", "Texas"))
+</pre>
+</pre>
