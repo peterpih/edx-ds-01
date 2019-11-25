@@ -24,3 +24,21 @@ For running Monte Carlo simulations
   ...
  <b>}</b>)
 </pre>
+
+
+<h2>sapply</h2>
+Apply a function element w3ise to a vector
+
+<pre>
+# Birthday example
+compute_prob <- function(n, B=10000){
+ same_day <- replicate(B, {
+   bdays <- sample(1:365, n, replace=TRUE)
+    any(duplicated(bdays))
+ })
+ mean(same_day)
+}
+
+n <- seq(1, 60)
+
+<pre>
